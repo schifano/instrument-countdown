@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Instruments View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InstrumentsViewController" customModule="InstrumentCountdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn8-qu-OQQ" userLabel="Attitude Indicator Button">
+                                <rect key="frame" x="253" y="20" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27501785266529505" green="0.75154903093764014" blue="0.85980902777777779" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="00:05" backgroundImage="attitude">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="attitudeIndicatorButtonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sDe-qA-wzH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRb-tl-xks" userLabel="Altimeter Button">
+                                <rect key="frame" x="487" y="20" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49146442724301087" green="0.42164288806909311" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="00:15">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="altimeterButtonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PRt-2I-xHv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-Er-RKW" userLabel="Vertical Speed Indicator Button">
+                                <rect key="frame" x="20" y="195" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.51523327171697808" green="0.65325325288719349" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="00:30">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="verticalSpeedIndicatorButtonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pu-1a-rWd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdt-lo-Aga" userLabel="Heading Indicator Button">
+                                <rect key="frame" x="253" y="195" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.68576522830919429" blue="0.24233298773184009" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="00:08">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="headingIndicatorButtonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXD-qY-LgD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHU-S2-QY8" userLabel="Turn Coordinator Button">
+                                <rect key="frame" x="487" y="195" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81061619350707714" green="0.91061000631313127" blue="0.27034421440817102" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="00:12">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="turnCoordinatorButtonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLU-rw-r2g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e78-x6-imj">
+                                <rect key="frame" x="20" y="20" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.47212939390000003" green="0.67549344550000001" blue="0.49405622249999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="00:25">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="airspeedIndicatorButtonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ve1-in-mDd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="airspeedIndicatorButton" destination="e78-x6-imj" id="Mhm-hx-UHE"/>
+                        <outlet property="altimeterButton" destination="fRb-tl-xks" id="n53-Tm-5Qd"/>
+                        <outlet property="attitudeIndicatorButton" destination="vn8-qu-OQQ" id="g91-78-7iO"/>
+                        <outlet property="headingIndicatorButton" destination="pdt-lo-Aga" id="Zmz-Il-Qq1"/>
+                        <outlet property="turnCoordinatorButton" destination="KHU-S2-QY8" id="2MK-0g-9FP"/>
+                        <outlet property="verticalSpeedIndicatorButton" destination="Pek-Er-RKW" id="e7g-ZA-3g7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99.400299850074973" y="117.59999999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="attitude" width="600" height="600"/>
+    </resources>
+</document>
